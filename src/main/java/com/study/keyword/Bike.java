@@ -9,7 +9,7 @@ public class Bike extends Car {
         System.out.println("我是"+name+"，我跑的不是很快");
     }
 
-    public void  run(){
+    public static void  run(){
         System.out.println("我是自行车，我正在跑");
     }
 
