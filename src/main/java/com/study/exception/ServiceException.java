@@ -15,6 +15,21 @@ public class ServiceException extends  RuntimeException {
     }
 
 
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getErrorMsg() {
+        return errorMsg;
+    }
+
+    public void setErrorMsg(String errorMsg) {
+        this.errorMsg = errorMsg;
+    }
 
     public static void main(String[] args) {
         try {
@@ -23,7 +38,8 @@ public class ServiceException extends  RuntimeException {
             System.out.println(e.getMessage());
             e.printStackTrace();
         }
-
     }
+
+
 
 }
