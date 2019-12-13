@@ -1,6 +1,5 @@
 package com.study.spring.aop;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.study.exception.ServiceException;
 import com.study.project.result.BusinessCodeEnum;
 import com.study.project.result.CallResult;
@@ -42,7 +41,7 @@ public class AspectException {
             return CallResult.fail(e.getCode(),e.getErrorMsg(),e.getMessage());
         } catch (Throwable e) {
             logger.info("{}.{}接口调用异常"+ joinPoint.getTarget().getClass().getSimpleName()+joinPoint.getSignature().getName()+ e);
-            return CallResult.fail(BusinessCodeEnum.DEFAULT_SYS_ERROR.getCode(), e.getMessage());
+            return CallResult.fail(BusinessCodeEnum.DEFAULT_SYS_ERROR.getCode(),BusinessCodeEnum.DEFAULT_SYS_ERROR.getMsg() ,e.getMessage());
         }
     }
 
