@@ -36,6 +36,7 @@ public class ParamCheckAspect {
     @Order(value = 1)
     public synchronized void doAround(ProceedingJoinPoint joinPoint, CheckParam checkParam) {
         try {
+            //1.获取到所有的参数值的数组
             Object[] args = joinPoint.getArgs();
             String processName = AspectUtil.getClassAddMethodName(joinPoint);
             //1.打印入参
