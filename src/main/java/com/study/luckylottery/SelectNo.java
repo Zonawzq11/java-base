@@ -20,13 +20,13 @@ public class SelectNo {
             //生成篮球组
             int buleRound = new Random().nextInt(17);
             if (buleRound == 0 ||
-            buleRound == 4 ||
+            buleRound == 2 ||
             buleRound == 5 ||
             buleRound == 6 ||
             buleRound == 8 ||
             buleRound == 10 ||
             buleRound == 13 ||
-            buleRound == 14 ||
+            buleRound == 16 ||
             buleRound == 15){
                  continue;
             }
@@ -60,7 +60,9 @@ public class SelectNo {
                     ||redRound == 23
                     ||redRound == 25
                     ||redRound == 27
-                    ||redRound == 28){
+                    ||redRound == 28
+                    ||redRound == 30
+                    ||redRound == 29){
                 continue;
             }
             if (redArrayList.contains(redRound)){
