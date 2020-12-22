@@ -3,7 +3,6 @@ package com.study.project.api;
 import com.study.project.model.UserModel;
 import com.study.project.result.CallResult;
 import com.study.project.service.UserService;
-import org.apache.catalina.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

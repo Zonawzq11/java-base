@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!--模型版本。maven2.0必须是这样写，现在是maven2唯一支持的版本-->
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -8,8 +9,11 @@
         <version>2.1.4.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <!--公司或者组织的唯一标识，并且配置时生成的路径也是由此生成，如：com.study ,maven 会在项目打包jar 包凡在本地路径 /com/study -->
     <groupId>com.study</groupId>
+    <!--本项目唯一ID,一个groupId 下面可能多个项目，有这个区分-->
     <artifactId>java-base</artifactId>
+    <!--本项目版本号-->
     <version>0.0.1-SNAPSHOT</version>
     <name>java-base</name>
     <description>Demo project for Spring Boot</description>
@@ -74,6 +78,18 @@
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-core</artifactId>
             <version>4.5.4</version>
+        </dependency>
+        <!--mapstruct-->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <!-- jdk8以下就使用mapstruct -->
+            <artifactId>mapstruct-jdk8</artifactId>
+            <version>1.2.0.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct-processor</artifactId>
+            <version>1.2.0.Final</version>
         </dependency>
 
     </dependencies>
