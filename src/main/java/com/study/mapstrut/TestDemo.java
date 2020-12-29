@@ -20,8 +20,6 @@ public class TestDemo {
         user.setUserName("zhiqiang");
         user.setUserId(123L);
 
-
-
         System.out.println("---------------");
         UserChild userChild = new UserChild();
         userChild.setChildName("childName");

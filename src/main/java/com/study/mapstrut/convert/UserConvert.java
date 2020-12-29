@@ -24,6 +24,6 @@ public interface UserConvert {
   })
    UserCopy toManyCopy(User user);
 
-  List<UserCopy> toListUserCopyList(List<User> users);
+   List<UserCopy> toListUserCopyList(List<User> users);
 
 }
