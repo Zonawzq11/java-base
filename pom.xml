@@ -24,7 +24,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!--jar 版本定义-->
         <lombok.verision>1.16.16</lombok.verision>
-        <fastjson.version>1.2.62</fastjson.version>
+        <fastjson.version>1.2.83</fastjson.version>
         <commons-lang3.version>3.8.1</commons-lang3.version>
     </properties>
 
